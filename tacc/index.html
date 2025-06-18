@@ -9,8 +9,6 @@
       
       
       
-        <link rel="prev" href="../quals_prep/">
-      
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -18,7 +16,7 @@
     
     
       
-        <title>TACC - UT Astronomy Grad Wiki</title>
+        <title>Texas Advanced Computing Center (TACC) Basics - UT Astronomy Grad Wiki</title>
       
     
     
@@ -106,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              TACC
+              Texas Advanced Computing Center (TACC) Basics
             
           </span>
         </div>
@@ -267,46 +265,6 @@
   
 
       
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../quals_prep/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Quals Prep
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    
-  
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
-        
-  
-  
-    
-  
-  TACC
-
-      </a>
-    </li>
-  
-
-      
     </ul>
   </div>
 </nav>
@@ -428,146 +386,6 @@
   
 
     
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../quals_prep/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Quals Prep
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    TACC
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    TACC
-    
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#logging-in" class="md-nav__link">
-    <span class="md-ellipsis">
-      Logging In
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#copy-a-file-to-tacc" class="md-nav__link">
-    <span class="md-ellipsis">
-      Copy a file to TACC
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#copy-a-directory-from-tacc" class="md-nav__link">
-    <span class="md-ellipsis">
-      Copy a directory from TACC
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#an-example-slurm-file" class="md-nav__link">
-    <span class="md-ellipsis">
-      An Example Slurm File
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#useful-terminal-commands-on-tacc" class="md-nav__link">
-    <span class="md-ellipsis">
-      Useful terminal commands on TACC
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tacc-usage" class="md-nav__link">
-    <span class="md-ellipsis">
-      TACC Usage
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-    
   </ul>
 </nav>
                   </div>
@@ -671,11 +489,13 @@
 <hr />
 <h2 id="logging-in">Logging In<a class="headerlink" href="#logging-in" title="Permanent link">&para;</a></h2>
 <p>TACC systems use SSH for access. You must have an active TACC account and an approved allocation.</p>
-<p><code>ssh username@SUPERCOMPUTER.tacc.utexas.edu</code></p>
+<pre><code class="language-bash">ssh username@SUPERCOMPUTER.tacc.utexas.edu
+</code></pre>
 <h2 id="copy-a-file-to-tacc">Copy a file to TACC<a class="headerlink" href="#copy-a-file-to-tacc" title="Permanent link">&para;</a></h2>
-<p><code>scp myfile.txt username@SUPERCOMPUTER.tacc.utexas.edu:file/path/to/file.txt</code></p>
+<pre><code class="language-bash">scp myfile.txt username@SUPERCOMPUTER.tacc.utexas.edu:file/path/to/file.txt
+</code></pre>
 <h2 id="copy-a-directory-from-tacc">Copy a directory from TACC<a class="headerlink" href="#copy-a-directory-from-tacc" title="Permanent link">&para;</a></h2>
-<pre><code class="language-bash">rsync -avz username@stampede2.tacc.utexas.edu:/work/01234/username/folder_to_copy/ . 
+<pre><code class="language-bash">rsync -avz username@SUPERCOMPUTER.tacc.utexas.edu:/work/01234/username/folder_to_copy/ . 
 </code></pre>
 <h2 id="an-example-slurm-file">An Example Slurm File<a class="headerlink" href="#an-example-slurm-file" title="Permanent link">&para;</a></h2>
 <pre><code class="language-bash">#!/bin/bash
@@ -691,14 +511,17 @@
                             # for all the queues available 
 #SBATCH -t 01:00:00         # Total time of your job to run
 #SBATCH -A your_allocation  # Which allocation to charge the time
-#SBATCH --mail-type=all 
-#SBATCH --mail-user=your_email@email.com
+#SBATCH --mail-type=all     # This will email you when your job starts and ends
+#SBATCH --mail-user=your_email@email.com #Your email
 
 
 module load python/3.10 #loading any neccessary tacc modules
 
 #calling your script
 python myscript.py
+</code></pre>
+<p>If you stored the above slurm commands to a file <em>tacc_job.slurm</em> then to run your job you would write this out in the command line:</p>
+<pre><code class="language-bash">sbatch tacc_job.slurm
 </code></pre>
 <h2 id="useful-terminal-commands-on-tacc">Useful terminal commands on TACC<a class="headerlink" href="#useful-terminal-commands-on-tacc" title="Permanent link">&para;</a></h2>
 <table>
