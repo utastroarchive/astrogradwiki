@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Oscar Chavez",
+        "year": "2022",
+        "topic": "Ex-Gal",
+        "file": "../quals_report/ChavezOscar_Second_Year_Proposal.pdf",
+        "advisor": "Steven Finkelstein"
+    },
+    
+    {
+        "title": "Test",
+        "year": "2023",
+        "topic": "Planets/ISM",
+        "file": "../quals_report/test.pdf",
+        "advisor": "Test Testington"
+    }
+
+]
