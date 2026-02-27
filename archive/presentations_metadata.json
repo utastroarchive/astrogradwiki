@@ -2,15 +2,22 @@
     {
         "title": "Oscar Chavez",
         "year": "2022",
-        "topic": "Ex-Gal",
+        "topic": "ExGal",
         "file": "../quals_presentations/ChavezOscar_second_year_presentation.pdf"
     },
     
     {
-        "title": "Test",
-        "year": "2023",
-        "topic": "Planets/ISM",
-        "file": "../quals_presentations/test.pdf"
+        "title": "Maya Debski",
+        "year": "2024",
+        "topic": "ExGal",
+        "file": "../quals_presentations/Debski_Second_Year_Assessment.pdf"
+    }, 
+
+    {
+        "title": "Zorayda Martinez",
+        "year": "2024",
+        "topic": "ExGal",
+        "file": "../quals_presentations/Martinez_2ndYear_Talk_v2.pdf"
     }
 
 ]
